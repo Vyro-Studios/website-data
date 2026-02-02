@@ -10,10 +10,11 @@
       "category": "inspired",
       "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
       "features": [
-        "15 unique vehicles",
-        "Custom tuning options",
-        "Realistic damage system",
-        "Custom handling"
+        "Context Menu & Skill Check",
+        "Notifications & TextUI",
+        "Progress Bar & Progress Circle",
+        "Radial Menu & Clipboard Copying",
+        "Alert & Input Dialog Menus"
       ]
     },
     {
