@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "ProdigyRP 2.6 UI Pack",
-      "description": "A collection of custom UI elements inspired by ProdigyRP 2.6. This pack includes various HUD components, menus, and interactive elements to enhance your roleplay experience.",
+      "description": "A collection of custom UI elements inspired by ProdigyRP 2.6. This pack includes various UI components, menus, and interactive elements to enhance your roleplay experience.",
       "thumbnail": "https://forum-cfx-re.akamaized.net/original/4X/0/3/1/031dbd5e1ead05845ab505b101bc8fbaa1b3712c.jpeg",
       "tebexLink": "https://your-tebex-link.com/package/1",
       "price": 14.99,
@@ -27,10 +27,10 @@
       "category": "inspired",
       "videoUrl": null,
       "features": [
-        "5 premium locations",
-        "Full customization",
-        "Storage system",
-        "Safe houses"
+        "ProdigyRP Inspired Design",
+        "Customizable Via UI Menu",
+        "Network Optimized Syncing",
+        "Interactable Models, Players, Vehicles & More!"
       ]
     },
     {
@@ -43,10 +43,8 @@
       "category": "inspired",
       "videoUrl": null,
       "features": [
-        "5 premium locations",
-        "Full customization",
-        "Storage system",
-        "Safe houses"
+        "ProdigyRP 2.6 Target",
+        "ProdigyRP 2.6 UI"
       ]
     }
   ]
