@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "ProdigyRP 2.6 UI Pack",
+      "description": "A collection of custom UI elements inspired by ProdigyRP 2.6. This pack includes various HUD components, menus, and interactive elements to enhance your roleplay experience.",
+      "thumbnail": "https://forum-cfx-re.akamaized.net/original/4X/0/3/1/031dbd5e1ead05845ab505b101bc8fbaa1b3712c.jpeg",
+      "tebexLink": "https://your-tebex-link.com/package/1",
+      "price": 14.99,
+      "category": "inspired",
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "features": [
+        "15 unique vehicles",
+        "Custom tuning options",
+        "Realistic damage system",
+        "Custom handling"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "ProdigyRP 2.6 Target",
+      "description": "An advanced targetting system inspired by ProdigyRP 2.6. This package includes a customizable target HUD, interactable features, and an enhanced customization menu to improve your gameplay experience.",
+      "thumbnail": "https://forum-cfx-re.akamaized.net/original/4X/0/3/1/031dbd5e1ead05845ab505b101bc8fbaa1b3712c.jpeg",
+      "tebexLink": "https://your-tebex-link.com/package/2",
+      "price": 14.99,
+      "category": "inspired",
+      "videoUrl": null,
+      "features": [
+        "5 premium locations",
+        "Full customization",
+        "Storage system",
+        "Safe houses"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "ProdigyRP 2.6 Bundle",
+      "description": "A bundle including the advanced targetting system and custom UI elements inspired by ProdigyRP 2.6. This package offers a comprehensive upgrade to your roleplay experience with enhanced visuals and interactive features.",
+      "thumbnail": "https://forum-cfx-re.akamaized.net/original/4X/0/3/1/031dbd5e1ead05845ab505b101bc8fbaa1b3712c.jpeg",
+      "tebexLink": "https://your-tebex-link.com/package/2",
+      "price": 24.99,
+      "category": "inspired",
+      "videoUrl": null,
+      "features": [
+        "5 premium locations",
+        "Full customization",
+        "Storage system",
+        "Safe houses"
+      ]
+    }
+  ]
+}
