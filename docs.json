@@ -1,0 +1,33 @@
+{
+  "sections": [
+    {
+      "id": "getting-started",
+      "title": "Getting Started",
+      "slug": "getting-started",
+      "content": "# Getting Started\n\nWelcome to our documentation! This page contains all the information you need to get started with our services.\n\n## What is This?\n\nThis documentation page pulls content directly from a GitHub repository, making it easy to update and maintain without touching the website code.\n\n## How to Use\n\n- Browse through the sections on the left sidebar\n- Click any section to view its content\n- Content is rendered with support for markdown formatting\n\n## Next Steps\n\n- Check out the Installation guide\n- Review our FAQ section\n- Contact support if you have questions",
+      "order": 1
+    },
+    {
+      "id": "installation",
+      "title": "Installation",
+      "slug": "installation",
+      "content": "# Installation Guide\n\nFollow these steps to get started:\n\n## Prerequisites\n\n- Make sure you have all required dependencies\n- Check system requirements\n- Have an active account\n\n## Installation Steps\n\n- Download the latest version from our store\n- Extract the files to your directory\n- Follow the configuration guide\n- Test your setup\n\n## Troubleshooting\n\nIf you encounter any issues:\n\n- Check the FAQ section below\n- Review system requirements\n- Contact our support team",
+      "order": 2
+    },
+    {
+      "id": "features",
+      "title": "Features",
+      "slug": "features",
+      "content": "# Key Features\n\nOur platform includes:\n\n## Core Features\n\n- Feature 1: Description of feature\n- Feature 2: Description of feature\n- Feature 3: Description of feature\n\n## Advanced Features\n\n- Advanced feature 1: What it does\n- Advanced feature 2: What it does\n\n## Integration\n\nSeamlessly integrates with:\n\n- Popular services\n- Third-party tools\n- Custom solutions",
+      "order": 3
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "slug": "faq",
+      "content": "# Frequently Asked Questions\n\n## How do I update this documentation?\n\nEdit the docs.json file in your website-data GitHub repository and commit your changes. The website will automatically pull the latest version.\n\n## Can I use markdown in the content?\n\nYes! The documentation supports basic markdown:\n\n- # Heading 1\n- ## Heading 2\n- Bullet points with - prefix\n- Regular paragraphs\n\n## How often is the documentation updated?\n\nDocumentation is fetched fresh every time the page loads, so changes appear immediately after committing to GitHub.\n\n## Can I add images to the documentation?\n\nCurrently, the documentation renderer supports text and markdown formatting. For images, you can link to them in your content.\n\n## What if I have more questions?\n\nContact our support team at support@vyrostudios.com",
+      "order": 4
+    }
+  ],
+  "lastUpdated": "2026-02-03T00:00:00Z"
+}
