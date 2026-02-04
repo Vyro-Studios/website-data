@@ -22,7 +22,7 @@
       "content": "# Shop Configuration\n\n## Config.lua Structure\n\nCustomize the config.lua file for shops:\n\n```lua\nConfig = {}\n\n-- Framework\nConfig.Framework = 'ESX' -- Options: ESX, QBCore\n\n-- Shop Settings\nConfig.MaxShops = 10\nConfig.DefaultCurrency = 'legal'\n\n-- Blip Settings\nConfig.ShopBlipSprite = 52\nConfig.ShopBlipColor = 2\nConfig.ShopBlipScale = 0.7\n\n-- Shops Table\nConfig.Shops = {\n    shop_1 = {\n        name = 'Downtown Shop',\n        currency = 'legal',\n        items = {},\n        targets = {}\n    }\n}\n```\n\n## Shop Item Format\n\n```lua\nitems = {\n    {\n        name = 'item_name',\n        price = 100,\n        amount = 50,\n        weight = 1.0\n    }\n}\n```",
       "order": 3,
       "parent": "shops"
-    },
+    }
   ],
   "lastUpdated": "2026-02-04T00:00:00Z"
 }
