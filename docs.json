@@ -8,60 +8,85 @@
       "order": 1
     },
     {
-      "id": "installation",
-      "title": "Installation Guide",
-      "slug": "installation",
-      "content": "# Installation Guide\n\n## Step 1: Extract Files\n\nExtract the downloaded resource to your server's resources folder:\n\n```\nresources/\n  ├── your-resource-name/\n  │   ├── client.lua\n  │   ├── server.lua\n  │   ├── config.lua\n  │   ├── fxmanifest.lua\n  │   └── ...\n```\n\n## Step 2: Configure Database\n\nImport the SQL file into your database:\n\n```\nMySQL: Import the .sql file from the resource folder\n```\n\n## Step 3: Update Server Configuration\n\nAdd the resource to your server.cfg:\n\n```\nensure your-resource-name\n```\n\n## Step 4: Configure Script\n\nEdit the config.lua file with your settings:\n\n- Set your framework (ESX, QBCore, etc.)\n- Configure database credentials\n- Customize features\n\n## Step 5: Start Server\n\nRestart your server and verify no errors appear in console.",
+      "id": "shops",
+      "title": "Shops",
+      "slug": "shops",
+      "content": "# Shops System\n\nThe shops system is a comprehensive framework for managing shops in your FiveM server.\n\n## Overview\n\nThis system allows you to create and manage multiple shops with different configurations. Each shop can have custom items, locations, and features.\n\n## Features\n\n- Multiple shop support\n- Custom item pricing\n- Shop locations with GPS markers\n- Inventory management\n- Blip configuration\n- Framework support (ESX, QBCore)",
       "order": 2
     },
     {
-      "id": "basic-usage",
-      "title": "Basic Usage",
-      "slug": "basic-usage",
-      "content": "# Basic Usage\n\n## Client-Side Functions\n\n### TriggerEvent\n\nTrigger a server event from the client:\n\n```lua\nTriggerServerEvent('your-resource:serverFunction', data)\n```\n\n### Callbacks\n\nUse callbacks for server responses:\n\n```lua\nTriggerServerCallback('your-resource:getData', function(result)\n    print('Received:', result)\nend)\n```\n\n## Server-Side Functions\n\n### RegisterServerEvent\n\nRegister a server event:\n\n```lua\nRegisterServerEvent('your-resource:serverFunction')\nAddEventHandler('your-resource:serverFunction', function(data)\n    print('Client triggered:', data)\nend)\n```\n\n### MySQL Query\n\nQuery the database:\n\n```lua\nMySQL.query('SELECT * FROM your_table WHERE id = ?', {1}, function(result)\n    if result[1] then\n        print('Found:', json.encode(result[1]))\n    end\nend)\n```",
-      "order": 3
+      "id": "shop-installation",
+      "title": "Shop Installation",
+      "slug": "shop-installation",
+      "content": "# Shop Installation\n\n## Step 1: Extract Files\n\nExtract the downloaded shop resource to your server's resources folder:\n\n```\nresources/\n  ├── your-shop-resource/\n  │   ├── client.lua\n  │   ├── server.lua\n  │   ├── config.lua\n  │   ├── fxmanifest.lua\n  │   └── ...\n```\n\n## Step 2: Configure Database\n\nImport the SQL file into your database:\n\n```sql\nCREATE TABLE shops (\n    id INT PRIMARY KEY AUTO_INCREMENT,\n    name VARCHAR(255),\n    currency VARCHAR(50),\n    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP\n);\n```\n\n## Step 3: Update Server Configuration\n\nAdd the resource to your server.cfg:\n\n```\nensure your-shop-resource\n```\n\n## Step 4: Configure Shop Settings\n\nEdit the config.lua file with your shop settings:\n\n```lua\nConfig.Framework = 'ESX'\nConfig.MaxShops = 10\nConfig.ShopBlipSprite = 52\nConfig.ShopBlipColor = 2\n```\n\n## Step 5: Start Server\n\nRestart your server and verify no errors appear in console.",
+      "order": 3,
+      "parent": "shops"
     },
     {
-      "id": "advanced-features",
-      "title": "Advanced Features",
-      "slug": "advanced-features",
-      "content": "# Advanced Features\n\n## Custom Events\n\nCreate custom events for your scripts:\n\n```lua\nlocal function CustomEvent()\n    TriggerEvent('your-resource:customEvent', {\n        player = source,\n        timestamp = os.time(),\n        data = 'custom data'\n    })\nend\n```\n\n## Database Integration\n\n### Insert Data\n\n```lua\nMySQL.insert('INSERT INTO your_table (name, data) VALUES (?, ?)', {\n    'Player Name',\n    json.encode({key = 'value'})\n}, function(id)\n    print('Inserted with ID:', id)\nend)\n```\n\n### Update Data\n\n```lua\nMySQL.update('UPDATE your_table SET data = ? WHERE id = ?', {\n    json.encode({key = 'newvalue'}),\n    playerId\n}, function(rowsChanged)\n    print('Rows updated:', rowsChanged)\nend)\n```\n\n## Exports\n\nExport functions for other resources:\n\n```lua\nlocal function GetPlayerData(playerId)\n    return PlayerData[playerId]\nend\n\nexports('GetPlayerData', GetPlayerData)\n```\n\nUse the export:\n\n```lua\nlocal data = exports['your-resource']:GetPlayerData(playerId)\n```",
-      "order": 4
+      "id": "shop-configuration",
+      "title": "Shop Configuration",
+      "slug": "shop-configuration",
+      "content": "# Shop Configuration\n\n## Config.lua Structure\n\nCustomize the config.lua file for shops:\n\n```lua\nConfig = {}\n\n-- Framework\nConfig.Framework = 'ESX' -- Options: ESX, QBCore\n\n-- Shop Settings\nConfig.MaxShops = 10\nConfig.DefaultCurrency = 'legal'\n\n-- Blip Settings\nConfig.ShopBlipSprite = 52\nConfig.ShopBlipColor = 2\nConfig.ShopBlipScale = 0.7\n\n-- Shops Table\nConfig.Shops = {\n    shop_1 = {\n        name = 'Downtown Shop',\n        currency = 'legal',\n        items = {},\n        targets = {}\n    }\n}\n```\n\n## Shop Item Format\n\n```lua\nitems = {\n    {\n        name = 'item_name',\n        price = 100,\n        amount = 50,\n        weight = 1.0\n    }\n}\n```",
+      "order": 4,
+      "parent": "shops"
+    },
+    {
+      "id": "inventory",
+      "title": "Inventory",
+      "slug": "inventory",
+      "content": "# Inventory System\n\nThe inventory system manages player items and storage.\n\n## Overview\n\nThis system provides a complete inventory management solution with support for multiple storage types, weight limits, and item stacking.\n\n## Key Features\n\n- Item stacking and weight management\n- Multiple storage types (player, stash, glovebox)\n- Inventory UI with search\n- Item transfer between containers\n- Drop and pickup items",
+      "order": 5
+    },
+    {
+      "id": "inventory-installation",
+      "title": "Inventory Installation",
+      "slug": "inventory-installation",
+      "content": "# Inventory Installation\n\n## Prerequisites\n\n- FiveM server\n- MySQL database\n- Framework (ESX or QBCore)\n\n## Installation Steps\n\n### 1. Extract Files\n\nExtract to resources folder:\n\n```\nresources/\n  └── inventory-system/\n      ├── client/\n      │   └── main.lua\n      ├── server/\n      │   └── main.lua\n      ├── config.lua\n      └── fxmanifest.lua\n```\n\n### 2. Create Database Tables\n\n```sql\nCREATE TABLE inventory_items (\n    id INT PRIMARY KEY AUTO_INCREMENT,\n    owner_id INT,\n    item_name VARCHAR(255),\n    amount INT,\n    data JSON,\n    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP\n);\n\nCREATE TABLE inventory_containers (\n    id INT PRIMARY KEY AUTO_INCREMENT,\n    type VARCHAR(50),\n    owner_id INT,\n    max_weight DECIMAL(10,2),\n    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP\n);\n```\n\n### 3. Add to server.cfg\n\n```\nensure inventory-system\n```\n\n### 4. Verify Installation\n\nRestart server and check console for:\n\n```\n[Inventory] System loaded successfully\n```",
+      "order": 6,
+      "parent": "inventory"
+    },
+    {
+      "id": "inventory-usage",
+      "title": "Inventory Usage",
+      "slug": "inventory-usage",
+      "content": "# Using the Inventory\n\n## Opening Inventory\n\nOpen player inventory with:\n\n```lua\nTriggerEvent('inventory:open')\n```\n\n## Adding Items\n\nAdd items to player inventory:\n\n```lua\nexports['inventory-system']:AddItem('player_id', 'item_name', 1)\n```\n\n## Removing Items\n\nRemove items from inventory:\n\n```lua\nexports['inventory-system']:RemoveItem('player_id', 'item_name', 1)\n```\n\n## Checking Items\n\nCheck if player has item:\n\n```lua\nlocal hasItem = exports['inventory-system']:GetItemCount('player_id', 'item_name')\nif hasItem > 0 then\n    print('Player has ' .. hasItem .. ' of this item')\nend\n```",
+      "order": 7,
+      "parent": "inventory"
     },
     {
       "id": "configuration",
       "title": "Configuration",
       "slug": "configuration",
       "content": "# Configuration\n\n## Config.lua Structure\n\nCustomize the config.lua file:\n\n```lua\nConfig = {}\n\n-- Framework\nConfig.Framework = 'ESX' -- Options: ESX, QBCore, Standalone\n\n-- Database\nConfig.Database = {\n    host = 'localhost',\n    username = 'root',\n    password = 'password',\n    database = 'yourdb'\n}\n\n-- Features\nConfig.EnableFeature1 = true\nConfig.EnableFeature2 = false\n\n-- Prices\nConfig.Prices = {\n    item1 = 100,\n    item2 = 250\n}\n\n-- Locations\nConfig.Locations = {\n    {x = 100.0, y = 200.0, z = 30.0, heading = 0.0},\n    {x = 150.0, y = 250.0, z = 30.0, heading = 90.0}\n}\n```\n\n## Framework Configuration\n\n### ESX\n\n```lua\nConfig.Framework = 'ESX'\nlocal ESX = exports['es_extended']:getSharedObject()\n```\n\n### QBCore\n\n```lua\nConfig.Framework = 'QBCore'\nlocal QBCore = exports['qb-core']:GetCoreObject()\n```",
-      "order": 5
+      "order": 8
     },
     {
       "id": "events-exports",
       "title": "Events & Exports",
       "slug": "events-exports",
       "content": "# Events & Exports\n\n## Available Events\n\n### Client Events\n\n- `your-resource:clientEvent` - Description here\n- `your-resource:playerLoaded` - Triggered when player loads\n- `your-resource:playerLogout` - Triggered on logout\n\n### Server Events\n\n- `your-resource:serverEvent` - Description here\n- `your-resource:updateData` - Update player data\n- `your-resource:deleteData` - Delete player data\n\n## Available Exports\n\n### Server Exports\n\n```lua\n-- Get player data\nexports['your-resource']:GetPlayerData(playerId)\n\n-- Update player data\nexports['your-resource']:UpdatePlayerData(playerId, data)\n\n-- Get item count\nexports['your-resource']:GetItemCount(playerId, itemName)\n```\n\n### Client Exports\n\n```lua\n-- Open UI\nexports['your-resource']:OpenUI()\n\n-- Close UI\nexports['your-resource']:CloseUI()\n\n-- Get UI status\nexports['your-resource']:IsUIOpen()\n```",
-      "order": 6
+      "order": 9
     },
     {
       "id": "lua-examples",
       "title": "Lua Code Examples",
       "slug": "lua-examples",
       "content": "# Lua Code Examples\n\n## Tables and Loops\n\n```lua\nlocal players = {1, 2, 3, 4, 5}\n\nfor i = 1, #players do\n    print('Player ID:', players[i])\nend\n\nfor k, v in ipairs(players) do\n    print(k, v)\nend\n```\n\n## Conditionals\n\n```lua\nlocal function CheckPlayer(playerId)\n    if playerId == nil then\n        print('Player ID is nil')\n        return false\n    elseif playerId > 32 then\n        print('Invalid player ID')\n        return false\n    else\n        print('Valid player:', playerId)\n        return true\n    end\nend\n```\n\n## String Operations\n\n```lua\nlocal str = 'Hello World'\nlocal upper = string.upper(str) -- HELLO WORLD\nlocal lower = string.lower(str) -- hello world\nlocal sub = string.sub(str, 1, 5) -- Hello\nlocal len = string.len(str) -- 11\n\n-- String formatting\nlocal formatted = string.format('Player %d has %d items', 1, 5)\nprint(formatted) -- Player 1 has 5 items\n```\n\n## JSON Operations\n\n```lua\nlocal data = {\n    name = 'Player',\n    items = {1, 2, 3},\n    settings = {theme = 'dark'}\n}\n\n-- Encode to JSON\nlocal jsonStr = json.encode(data)\nprint(jsonStr)\n\n-- Decode from JSON\nlocal decoded = json.decode(jsonStr)\nprint(decoded.name) -- Player\n```",
-      "order": 7
+      "order": 10
     },
     {
       "id": "troubleshooting",
       "title": "Troubleshooting",
       "slug": "troubleshooting",
       "content": "# Troubleshooting\n\n## Common Issues\n\n### Resource Won't Start\n\n- Check for syntax errors in fxmanifest.lua\n- Verify all dependencies are installed\n- Check server logs for error messages\n- Ensure the resource name matches in server.cfg\n\n### Database Connection Error\n\n```lua\n-- Error: Cannot connect to database\n-- Solution: Check database credentials in config.lua\n-- Verify MySQL is running\n-- Check firewall settings\n```\n\n### Export Not Found\n\n```lua\n-- Error: Export not found\n-- Solution: Ensure resource is started with 'ensure'\n-- Check export function name is correct\n-- Verify resource is in resources folder\n```\n\n## Debug Mode\n\nEnable debug logging:\n\n```lua\nConfig.Debug = true\n\nif Config.Debug then\n    print('^2[DEBUG]^7 Message here')\nend\n```\n\n## Getting Help\n\n- Check the documentation\n- Review the config.lua file\n- Check server console for errors\n- Contact support at support@vyrostudios.com",
-      "order": 8
+      "order": 11
     },
     {
       "id": "api-reference",
       "title": "API Reference",
       "slug": "api-reference",
       "content": "# API Reference\n\n## Server Functions\n\n### GetPlayer(id)\n\nGet a player object by ID\n\n```lua\nlocal player = GetPlayer(1)\nif player then\n    print('Player found:', player.name)\nend\n```\n\n### UpdatePlayer(id, data)\n\nUpdate player data\n\n```lua\nUpdatePlayer(1, {\n    money = 5000,\n    items = {'item1', 'item2'}\n})\n```\n\n## Client Functions\n\n### OpenUI(data)\n\nOpen the UI with optional data\n\n```lua\nOpenUI({\n    title = 'My UI',\n    content = 'Hello World'\n})\n```\n\n### CloseUI()\n\nClose the current UI\n\n```lua\nCloseUI()\n```\n\n## Callbacks\n\n### TriggerServerCallback(name, cb)\n\nCall a server function from client\n\n```lua\nTriggerServerCallback('GetPlayerMoney', function(money)\n    print('You have $' .. money)\nend)\n```\n\n## Events\n\n### TriggerEvent(name, ...)\n\nTrigger a client event\n\n```lua\nTriggerEvent('your-resource:eventName', arg1, arg2)\n```\n\n### TriggerServerEvent(name, ...)\n\nTrigger a server event from client\n\n```lua\nTriggerServerEvent('your-resource:serverEvent', data)\n```",
-      "order": 9
+      "order": 12
     }
   ],
   "lastUpdated": "2026-02-04T00:00:00Z"
