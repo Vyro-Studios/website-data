@@ -2,25 +2,41 @@
   "sections": [
     {
       "id": "shops",
-      "title": "Shops",
+      "title": "Vyro Shops",
       "slug": "shops",
-      "content": "# Shops System\n\nThe shops system is a comprehensive framework for managing shops in your FiveM server.\n\n## Overview\n\nThis system allows you to create and manage multiple shops with different configurations. Each shop can have custom items, locations, and features.\n\n## Features\n\n- Multiple shop support\n- Custom item pricing\n- Shop locations with GPS markers\n- Inventory management\n- Blip configuration\n- Framework support (ESX, QBCore)",
+      "content": "# Vyro Shops System\n\nA powerful and intuitive shop management system designed for FiveM servers. Vyro Shops provides an elegant UI-based shop creation tool, seamless config import/export functionality, and robust API support for server and client-side interactions.\n\n## Key Features\n\n- **Shop Maker UI**: Create and manage shops through an intuitive visual interface without manual coding\n- **Multi-Format Support**: Import shop configurations from Vyro, OX Inventory, or QB-Shops formats\n- **Flexible Configuration**: Easily add custom items, set pricing, and configure shop locations\n- **Blip Management**: Add GPS markers to your shops for enhanced player navigation\n- **Simple API**: Straightforward server and client-side methods for triggering shops\n- **Config Export**: Download or copy your configurations directly to clipboard in the correct Vyro format",
       "order": 1
     },
     {
       "id": "shop-installation",
-      "title": "Shop Installation",
+      "title": "Installation Guide",
       "slug": "shop-installation",
-      "content": "# Shop Installation\n\n## Step 1: Extract Files\n\nExtract the downloaded shop resource to your server's resources folder:\n\n```\nresources/\n  ├── your-shop-resource/\n  │   ├── client.lua\n  │   ├── server.lua\n  │   ├── config.lua\n  │   ├── fxmanifest.lua\n  │   └── ...\n```\n\n## Step 2: Configure Database\n\nImport the SQL file into your database:\n\n```sql\nCREATE TABLE shops (\n    id INT PRIMARY KEY AUTO_INCREMENT,\n    name VARCHAR(255),\n    currency VARCHAR(50),\n    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP\n);\n```\n\n## Step 3: Update Server Configuration\n\nAdd the resource to your server.cfg:\n\n```\nensure your-shop-resource\n```\n\n## Step 4: Configure Shop Settings\n\nEdit the config.lua file with your shop settings:\n\n```lua\nConfig.Framework = 'ESX'\nConfig.MaxShops = 10\nConfig.ShopBlipSprite = 52\nConfig.ShopBlipColor = 2\n```\n\n## Step 5: Start Server\n\nRestart your server and verify no errors appear in console.",
+      "content": "# Installation Guide\n\nGetting Vyro Shops up and running on your server is quick and straightforward.\n\n## Step 1: Extract the Resource\n\nDrag the `vyro-shops` folder into your server's resources directory:\n\n```\nresources/\n  ├── vyro-shops/\n  │   ├── client/\n  │   ├── server/\n  │   ├── web-src/\n  │   ├── Config.lua\n  │   ├── fxmanifest.lua\n  │   └── README.md\n```\n\n## Step 2: Add to Server Configuration\n\nOpen your `server.cfg` or `resources.cfg` and ensure `vyro-shops` is started **after** your inventory system:\n\n```\nensure ox_inventory\n# or\nensure qb-inventory\n\n# Then add vyro-shops\nensure vyro-shops\n```\n\n**Important**: Vyro Shops must load after your inventory resource to function properly.\n\n## Step 3: Restart Your Server\n\nRestart your FiveM server and verify that the resource starts without errors.",
       "order": 2,
       "parent": "shops"
     },
     {
-      "id": "shop-configuration",
-      "title": "Shop Configuration",
-      "slug": "shop-configuration",
-      "content": "# Shop Configuration\n\n## Config.lua Structure\n\nCustomize the config.lua file for shops:\n\n```lua\nConfig = {}\n\n-- Framework\nConfig.Framework = 'ESX' -- Options: ESX, QBCore\n\n-- Shop Settings\nConfig.MaxShops = 10\nConfig.DefaultCurrency = 'legal'\n\n-- Blip Settings\nConfig.ShopBlipSprite = 52\nConfig.ShopBlipColor = 2\nConfig.ShopBlipScale = 0.7\n\n-- Shops Table\nConfig.Shops = {\n    shop_1 = {\n        name = 'Downtown Shop',\n        currency = 'legal',\n        items = {},\n        targets = {}\n    }\n}\n```\n\n## Shop Item Format\n\n```lua\nitems = {\n    {\n        name = 'item_name',\n        price = 100,\n        amount = 50,\n        weight = 1.0\n    }\n}\n```",
+      "id": "shop-creation",
+      "title": "Creating Shops",
+      "slug": "shop-creation",
+      "content": "# Creating Shops\n\nVyro Shops includes a powerful visual shop maker that eliminates the need for manual configuration editing.\n\n## Using the Shop Maker UI\n\n### Creating a New Shop\n\n1. **Open the Shop Maker**: Click the **+ NEW SHOP** button in the top left or **+ CREATE NEW SHOP** in the center of the screen\n2. **Configure Shop Details**: Fill in the relevant data fields for your shop:\n   - Shop name\n   - Shop location coordinates\n   - Additional settings as needed\n3. **Add Items**: Choose from:\n   - **Quick Items**: Select common items from the built-in UI list\n   - **Custom Items**: Add your own items with custom pricing\n4. **Configure Blips**: Optionally add a GPS marker (blip) for your shop location\n5. **Export Configuration**: Once satisfied, either:\n   - Click **Copy to Clipboard** to copy the config\n   - Click **Download File** to save the config file\n\nThe config will be automatically formatted in the correct Vyro Shop format, ready to use.\n\n## Importing Existing Configs\n\nVyro Shops supports importing shop configurations from three formats:\n\n- **Vyro Format**: Native Vyro Shops configuration\n- **OX Inventory Format**: Configs from OX Inventory shops\n- **QB-Shops Format**: Configs from QBCore shop systems\n\nThe import process automatically converts any format to the native Vyro format, allowing you to:\n- Edit and customize imported shops\n- Create or delete shops as needed\n- Download the converted config in the proper format",
       "order": 3,
+      "parent": "shops"
+    },
+    {
+      "id": "shop-usage",
+      "title": "Shop API Usage",
+      "slug": "shop-usage",
+      "content": "# Shop API Usage\n\nTrigger shops in your server through simple and flexible API methods.\n\n## Server-Side Usage\n\n### Open Shop by Name\n\nTrigger a predefined shop from your Config.lua:\n\n```lua\nTriggerClientEvent(\"vyro-shops:openShop\", source, \"nameOfShop\")\n```\n\n**Example**:\n```lua\nTriggerClientEvent(\"vyro-shops:openShop\", source, \"clothing_store\")\n```\n\n### Open Shop with Dynamic Items\n\nCreate a temporary shop with custom items on-the-fly:\n\n```lua\nTriggerClientEvent(\"vyro-shops:openShop\", source, {\n    shopName = \"Vyro's Store\",\n    items = {\n        {name = \"bread\", price = 5},\n        {name = \"water\", price = 5}\n    }\n})\n```\n\n## Client-Side Usage\n\n### Open Shop by Name\n\nTrigger a predefined shop locally:\n\n```lua\nTriggerEvent(\"vyro-shops:openShop\", \"nameOfShop\")\n```\n\n### Open Shop with Dynamic Items\n\nCreate a temporary shop with custom items:\n\n```lua\nTriggerEvent(\"vyro-shops:openShop\", {\n    shopName = \"Vyro's Store\",\n    items = {\n        {name = \"bread\", price = 5},\n        {name = \"water\", price = 5}\n    }\n})\n```\n\n## Parameter Details\n\n- **shopName** (string): Display name of the shop\n- **items** (table): Array of items with `name` and `price` properties\n  - **name** (string): Item identifier from your inventory system\n  - **price** (number): Sale price of the item",
+      "order": 4,
+      "parent": "shops"
+    },
+    {
+      "id": "shop-configuration",
+      "title": "Configuration",
+      "slug": "shop-configuration",
+      "content": "# Configuration\n\nVyro Shops uses a simple and intuitive configuration structure defined in `Config.lua`.\n\n## Config.lua Structure\n\nThe Config.lua file contains all your shop definitions:\n\n```lua\nConfig = {}\n\n-- Your shop definitions go here\nConfig.Shops = {\n    shop_name_here = {\n        shopName = \"Display Name\",\n        items = {\n            {name = \"item_name\", price = 100},\n            {name = \"another_item\", price = 50}\n        },\n        -- Additional configuration options\n    }\n}\n```\n\n## Shop Configuration Format\n\nEach shop entry should follow this structure:\n\n```lua\nshop_identifier = {\n    shopName = \"Shop Display Name\",      -- Name shown to players\n    items = {\n        {\n            name = \"item_name\",           -- Item identifier\n            price = 100                    -- Sale price\n        }\n    }\n}\n```\n\n## Tips\n\n- Use the **Shop Maker UI** to generate proper configurations automatically\n- Export your completed shops and paste them directly into Config.lua\n- Item names must match identifiers in your inventory system (ox_inventory or qb-core)\n- The UI handles all formatting, reducing configuration errors",
+      "order": 5,
       "parent": "shops"
     }
   ],
