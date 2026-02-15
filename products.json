@@ -146,6 +146,34 @@
           "tebexLink": "https://your-tebex-link.com/package/minigames-open"
         }
       ]
+    },
+    {
+      "id": 6,
+      "name": "EchoRP 2.0 Ox Inventory",
+      "description": "A fully redesigned and optimized Ox Inventory system for ESX, QBCore, and Qbox. Features a modern UI overhaul, improved item previews, durability display, weapon metadata support, and enhanced user experience.",
+      "thumbnail": "previews/EchoRP1Preview.png",
+      "category": ["esx", "qbcore", "qbox", "redesigns"],
+      "videoUrl": null,
+      "features": [
+        "Weapon Metadata & Serial Display",
+        "Durability & Ammo Tracking",
+        "Optimized & Lightweight",
+        "Framework Compatible (ESX / QBCore / Qbox)"
+      ],
+      "pricing": [
+        {
+          "type": "Open Lua Code, Built UI Code",
+          "label": "Escrow Version",
+          "price": 5,
+          "tebexLink": "https://your-tebex-link.com/package/echorp-ox-escrow"
+        },
+        {
+          "type": "Open Lua Code, Open UI Code!",
+          "label": "Open Source",
+          "price": 10,
+          "tebexLink": "https://your-tebex-link.com/package/echorp-ox-open"
+        }
+      ]
     }
   ]
 }
