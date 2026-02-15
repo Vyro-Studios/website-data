@@ -9,49 +9,96 @@
   "products": [
     {
       "id": 1,
-      "name": "ProdigyRP 2.6 UI Pack",
-      "description": "A collection of custom UI elements inspired by ProdigyRP 2.6. This pack includes various UI components, menus, and interactive elements to enhance your roleplay experience.",
+      "name": "ProdigyRP Shop System",
+      "description": "A fully configurable shop system built for ESX, QBCore, and Qbox. Features a clean cart-based UI, configurable locations, and secure server-side validation for purchases.",
       "thumbnail": "https://forum-cfx-re.akamaized.net/original/4X/0/3/1/031dbd5e1ead05845ab505b101bc8fbaa1b3712c.jpeg",
-      "tebexLink": "https://your-tebex-link.com/package/1",
-      "price": 14.99,
-      "category": "redesigns",
-      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "tebexLink": "https://your-tebex-link.com/package/shop",
+      "category": ["esx", "qbcore", "qbox"],
+      "videoUrl": null,
       "features": [
-        "Context Menu & Skill Check",
-        "Notifications & TextUI",
-        "Progress Bar & Progress Circle",
-        "Radial Menu & Clipboard Copying",
-        "Alert & Input Dialog Menus"
+        "Framework Support: ESX / QBCore / Qbox",
+        "Cart-Based Purchasing",
+        "Configurable Items & Locations",
+        "Optimized Server Validation"
+      ],
+      "pricing": [
+        { "type": "escrow", "label": "Free (Escrow)", "price": 0 },
+        { "type": "open", "label": "Open Source", "price": 5 }
       ]
     },
     {
       "id": 2,
-      "name": "ProdigyRP 2.6 Target",
-      "description": "An advanced targetting system inspired by ProdigyRP 2.6. This package includes a customizable target HUD, interactable features, and an enhanced customization menu to improve your gameplay experience.",
+      "name": "ProdigyRP Target System",
+      "description": "A redesigned and optimized targeting system featuring entity, player, vehicle, and zone interactions with smooth UI transitions and efficient syncing.",
       "thumbnail": "https://forum-cfx-re.akamaized.net/original/4X/0/3/1/031dbd5e1ead05845ab505b101bc8fbaa1b3712c.jpeg",
-      "tebexLink": "https://your-tebex-link.com/package/2",
-      "price": 14.99,
-      "category": "redesigns",
+      "tebexLink": "https://your-tebex-link.com/package/target",
+      "category": ["esx", "qbcore", "qbox", "redesigns"],
       "videoUrl": null,
       "features": [
-        "ProdigyRP Inspired Design",
-        "Customizable Via UI Menu",
-        "Network Optimized Syncing",
-        "Interactable Models, Players, Vehicles & More!"
+        "Full UI Redesign",
+        "Entity / Player / Vehicle Targeting",
+        "Zone & Model Support",
+        "Optimized Syncing"
+      ],
+      "pricing": [
+        { "type": "escrow", "label": "Escrow Version", "price": 10 },
+        { "type": "open", "label": "Open Source", "price": 20 }
       ]
     },
     {
       "id": 3,
-      "name": "ProdigyRP 2.6 Bundle",
-      "description": "A bundle including the advanced targetting system and custom UI elements inspired by ProdigyRP 2.6. This package offers a comprehensive upgrade to your roleplay experience with enhanced visuals and interactive features.",
+      "name": "ProdigyRP ox_lib Redesign",
+      "description": "A complete ox_lib UI redesign featuring rebuilt interface components and escrow-compatible UI functions while maintaining full core functionality.",
       "thumbnail": "https://forum-cfx-re.akamaized.net/original/4X/0/3/1/031dbd5e1ead05845ab505b101bc8fbaa1b3712c.jpeg",
-      "tebexLink": "https://your-tebex-link.com/package/2",
-      "price": 24.99,
-      "category": "redesigns",
+      "tebexLink": "https://your-tebex-link.com/package/oxlib",
+      "category": ["esx", "qbcore", "qbox", "redesigns"],
       "videoUrl": null,
       "features": [
-        "ProdigyRP 2.6 Target",
-        "ProdigyRP 2.6 UI"
+        "Complete UI Overhaul",
+        "Modernized Components",
+        "Performance Optimized"
+      ],
+      "pricing": [
+        { "type": "escrow", "label": "Escrow Version", "price": 10 },
+        { "type": "open", "label": "Open Source", "price": 20 }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "ProdigyRP Deathscreen",
+      "description": "A redesigned ESX ambulance job with immersive UI, respawn timers, and configurable hospital integration.",
+      "thumbnail": "https://forum-cfx-re.akamaized.net/original/4X/0/3/1/031dbd5e1ead05845ab505b101bc8fbaa1b3712c.jpeg",
+      "tebexLink": "https://your-tebex-link.com/package/deathscreen",
+      "category": ["esx"],
+      "videoUrl": null,
+      "features": [
+        "ESX Framework Support",
+        "Custom Death UI",
+        "Respawn Timer System",
+        "Hospital / Revive Configuration"
+      ],
+      "pricing": [
+        { "type": "escrow", "label": "Escrow Version", "price": 5 },
+        { "type": "open", "label": "Open Source", "price": 10 }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "ProdigyRP Minigames Pack (51 Games)",
+      "description": "A comprehensive collection of 51 custom-built minigames featuring fully developed UI systems, skill-based challenges, reaction tests, puzzles, and interactive mechanics.",
+      "thumbnail": "https://forum-cfx-re.akamaized.net/original/4X/0/3/1/031dbd5e1ead05845ab505b101bc8fbaa1b3712c.jpeg",
+      "tebexLink": "https://your-tebex-link.com/package/minigames",
+      "category": ["esx", "qbcore", "qbox"],
+      "videoUrl": null,
+      "features": [
+        "51 Unique Minigames",
+        "Fully Built Custom UI",
+        "Framework Compatible",
+        "Optimized Performance"
+      ],
+      "pricing": [
+        { "type": "escrow", "label": "Escrow / Built UI", "price": 10 },
+        { "type": "open", "label": "Open Lua (Built UI Only)", "price": 20 }
       ]
     }
   ]
