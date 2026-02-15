@@ -1,4 +1,12 @@
 {
+  "categories": [
+    "all",
+    "inspired",
+    "esx",
+    "qbcore",
+    "qbox",
+    "redesigns"
+  ],
   "products": [
     {
       "id": 1,
