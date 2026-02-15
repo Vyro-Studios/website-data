@@ -1,7 +1,6 @@
 {
   "categories": [
     "all",
-    "inspired",
     "esx",
     "qbcore",
     "qbox",
@@ -15,7 +14,7 @@
       "thumbnail": "https://forum-cfx-re.akamaized.net/original/4X/0/3/1/031dbd5e1ead05845ab505b101bc8fbaa1b3712c.jpeg",
       "tebexLink": "https://your-tebex-link.com/package/1",
       "price": 14.99,
-      "category": "inspired",
+      "category": "redesigns",
       "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
       "features": [
         "Context Menu & Skill Check",
@@ -32,7 +31,7 @@
       "thumbnail": "https://forum-cfx-re.akamaized.net/original/4X/0/3/1/031dbd5e1ead05845ab505b101bc8fbaa1b3712c.jpeg",
       "tebexLink": "https://your-tebex-link.com/package/2",
       "price": 14.99,
-      "category": "inspired",
+      "category": "redesigns",
       "videoUrl": null,
       "features": [
         "ProdigyRP Inspired Design",
@@ -48,7 +47,7 @@
       "thumbnail": "https://forum-cfx-re.akamaized.net/original/4X/0/3/1/031dbd5e1ead05845ab505b101bc8fbaa1b3712c.jpeg",
       "tebexLink": "https://your-tebex-link.com/package/2",
       "price": 24.99,
-      "category": "inspired",
+      "category": "redesigns",
       "videoUrl": null,
       "features": [
         "ProdigyRP 2.6 Target",
