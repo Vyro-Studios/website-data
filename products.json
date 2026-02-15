@@ -22,13 +22,13 @@
       ],
       "pricing": [
         {
-          "type": "escrow",
+          "type": "Escrowed Lua Code, Built UI Code, Config Available!",
           "label": "Free (Escrow)",
           "price": 0,
           "tebexLink": "https://your-tebex-link.com/package/shop-escrow"
         },
         {
-          "type": "open",
+          "type": "Open Lua Code, Open UI Code!",
           "label": "Open Source",
           "price": 5,
           "tebexLink": "https://your-tebex-link.com/package/shop-open"
@@ -50,13 +50,13 @@
       ],
       "pricing": [
         {
-          "type": "escrow",
+          "type": "Escrow Lua Code, Built UI Code, Config Available!",
           "label": "Escrow Version",
           "price": 10,
           "tebexLink": "https://your-tebex-link.com/package/target-escrow"
         },
         {
-          "type": "open",
+          "type": "Open Lua Code, Open UI Code!",
           "label": "Open Source",
           "price": 20,
           "tebexLink": "https://your-tebex-link.com/package/target-open"
@@ -77,13 +77,13 @@
       ],
       "pricing": [
         {
-          "type": "escrow",
+          "type": "Escrowed Lua Code, Built UI Code, Config Available!",
           "label": "Escrow Version",
           "price": 10,
           "tebexLink": "https://your-tebex-link.com/package/oxlib-escrow"
         },
         {
-          "type": "open",
+          "type": "Open Lua Code, Open UI Code!",
           "label": "Open Source",
           "price": 20,
           "tebexLink": "https://your-tebex-link.com/package/oxlib-open"
@@ -105,13 +105,13 @@
       ],
       "pricing": [
         {
-          "type": "escrow",
+          "type": "Escrowed Lua Code, Built UI Code, Config Available!",
           "label": "Escrow Version",
           "price": 5,
           "tebexLink": "https://your-tebex-link.com/package/deathscreen-escrow"
         },
         {
-          "type": "open",
+          "type": "Open Lua Code, Open UI Code!",
           "label": "Open Source",
           "price": 10,
           "tebexLink": "https://your-tebex-link.com/package/deathscreen-open"
@@ -133,14 +133,14 @@
       ],
       "pricing": [
         {
-          "type": "escrow",
+          "type": "Escrowed Lua Code, Built UI Code",
           "label": "Escrow / Built UI",
           "price": 10,
           "tebexLink": "https://your-tebex-link.com/package/minigames-escrow"
         },
         {
-          "type": "open",
-          "label": "Open Lua (Built UI Only)",
+          "type": "Open Lua Code, Built UI Code",
+          "label": "Open Lua",
           "price": 20,
           "tebexLink": "https://your-tebex-link.com/package/minigames-open"
         }
