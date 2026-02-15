@@ -39,7 +39,7 @@
     {
       "id": 2,
       "name": "ProdigyRP Target System",
-      "description": "A redesigned and optimized targeting system featuring entity, player, vehicle, and zone interactions with smooth UI transitions and efficient syncing.",
+      "description": "A redesigned and optimized ox_target system featuring entity, player, vehicle, and zone interactions with smooth UI transitions and efficient syncing.",
       "thumbnail": "previews/TargetPreview.png",
       "category": ["esx", "qbcore", "qbox", "redesigns"],
       "videoUrl": null,
@@ -68,7 +68,7 @@
       "id": 3,
       "name": "ProdigyRP ox_lib Redesign",
       "description": "A complete ox_lib UI redesign featuring rebuilt interface components while maintaining full core functionality.",
-      "thumbnail": "https://forum-cfx-re.akamaized.net/original/4X/0/3/1/031dbd5e1ead05845ab505b101bc8fbaa1b3712c.jpeg",
+      "thumbnail": "previews/OxLibPreview.png",
       "category": ["esx", "qbcore", "qbox", "redesigns"],
       "videoUrl": null,
       "features": [
@@ -95,7 +95,7 @@
       "id": 4,
       "name": "ProdigyRP Deathscreen",
       "description": "A redesigned ESX ambulance job with immersive UI, respawn timers, and configurable hospital integration.",
-      "thumbnail": "https://forum-cfx-re.akamaized.net/original/4X/0/3/1/031dbd5e1ead05845ab505b101bc8fbaa1b3712c.jpeg",
+      "thumbnail": "previews/DeathscreenPreview.png",
       "category": ["esx"],
       "videoUrl": null,
       "features": [
@@ -123,7 +123,7 @@
       "id": 5,
       "name": "ProdigyRP Minigames Pack (51 Games)",
       "description": "A comprehensive collection of 51 custom-built minigames featuring fully developed UI systems, skill-based challenges, reaction tests, puzzles, and interactive mechanics.",
-      "thumbnail": "https://forum-cfx-re.akamaized.net/original/4X/0/3/1/031dbd5e1ead05845ab505b101bc8fbaa1b3712c.jpeg",
+      "thumbnail": "previews/MinigamesPreview.png",
       "category": ["esx", "qbcore", "qbox"],
       "videoUrl": null,
       "features": [
