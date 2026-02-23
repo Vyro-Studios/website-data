@@ -9,11 +9,11 @@
   "products": [
     {
       "id": 1,
-      "name": "ProdigyRP Shop System",
+      "name": "ProdigyRP 2.8 Shop System",
       "description": "A fully configurable shop system built for ESX, QBCore, and Qbox. Features a clean cart-based UI, configurable locations, and secure server-side validation for purchases.",
       "thumbnail": "previews/ShopPreview.png",
       "category": ["esx", "qbcore", "qbox"],
-      "videoUrl": null,
+      "videoUrl": "https://youtu.be/x4OHpev5jWY",
       "features": [
         "Framework Support: ESX / QBCore / Qbox",
         "Cart-Based Purchasing",
@@ -38,94 +38,11 @@
     },
     {
       "id": 2,
-      "name": "ProdigyRP Target System",
-      "description": "A redesigned and optimized ox_target system featuring entity, player, vehicle, and zone interactions with smooth UI transitions and efficient syncing.",
-      "thumbnail": "previews/TargetPreview.png",
-      "category": ["esx", "qbcore", "qbox", "redesigns"],
-      "videoUrl": null,
-      "features": [
-        "Full UI Redesign",
-        "Entity / Player / Vehicle Targeting",
-        "Zone & Model Support",
-        "Optimized Syncing"
-      ],
-      "pricing": [
-        {
-          "type": "Escrow Lua Code, Built UI Code, Config Available!",
-          "label": "Escrow Version",
-          "price": 10,
-          "tebexLink": "https://your-tebex-link.com/package/target-escrow"
-        },
-        {
-          "type": "Open Lua Code, Open UI Code!",
-          "label": "Open Source",
-          "price": 20,
-          "tebexLink": "https://your-tebex-link.com/package/target-open"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "name": "ProdigyRP ox_lib Redesign",
-      "description": "A complete ox_lib UI redesign featuring rebuilt interface components while maintaining full core functionality.",
-      "thumbnail": "previews/OxLibPreview.png",
-      "category": ["esx", "qbcore", "qbox", "redesigns"],
-      "videoUrl": null,
-      "features": [
-        "Complete UI Overhaul",
-        "Modernized Components",
-        "Performance Optimized"
-      ],
-      "pricing": [
-        {
-          "type": "Escrowed Lua Code, Built UI Code, Config Available!",
-          "label": "Escrow Version",
-          "price": 10,
-          "tebexLink": "https://your-tebex-link.com/package/oxlib-escrow"
-        },
-        {
-          "type": "Open Lua Code, Open UI Code!",
-          "label": "Open Source",
-          "price": 20,
-          "tebexLink": "https://your-tebex-link.com/package/oxlib-open"
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "name": "ProdigyRP Deathscreen",
-      "description": "A redesigned ESX ambulance job with immersive UI, respawn timers, and configurable hospital integration.",
-      "thumbnail": "previews/DeathscreenPreview.png",
-      "category": ["esx"],
-      "videoUrl": null,
-      "features": [
-        "ESX Framework Support",
-        "Custom Death UI",
-        "Respawn Timer System",
-        "Hospital / Revive Configuration"
-      ],
-      "pricing": [
-        {
-          "type": "Escrowed Lua Code, Built UI Code, Config Available!",
-          "label": "Escrow Version",
-          "price": 5,
-          "tebexLink": "https://your-tebex-link.com/package/deathscreen-escrow"
-        },
-        {
-          "type": "Open Lua Code, Open UI Code!",
-          "label": "Open Source",
-          "price": 10,
-          "tebexLink": "https://your-tebex-link.com/package/deathscreen-open"
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "name": "ProdigyRP Minigames Pack (51 Games)",
+      "name": "ProdigyRP 2.8 Minigames Pack (51 Games)",
       "description": "A comprehensive collection of 51 custom-built minigames featuring fully developed UI systems, skill-based challenges, reaction tests, puzzles, and interactive mechanics.",
       "thumbnail": "previews/MinigamesPreview.png",
       "category": ["esx", "qbcore", "qbox"],
-      "videoUrl": null,
+      "videoUrl": "https://youtu.be/IJ7YBFhdqKM",
       "features": [
         "51 Unique Minigames",
         "Fully Built Custom UI",
@@ -148,12 +65,74 @@
       ]
     },
     {
-      "id": 6,
-      "name": "EchoRP 2.0 Ox Inventory",
+      "id": 3,
+      "name": "EchoRP 1.5 Ox Inventory",
       "description": "A fully redesigned and optimized Ox Inventory system for ESX, QBCore, and Qbox. Features a modern UI overhaul, improved item previews, durability display, weapon metadata support, and enhanced user experience.",
       "thumbnail": "previews/EchoRP1Preview.png",
       "category": ["esx", "qbcore", "qbox", "redesigns"],
-      "videoUrl": null,
+      "videoUrl": "https://youtu.be/PgOsxQf5PAU",
+      "features": [
+        "Weapon Metadata & Serial Display",
+        "Durability & Ammo Tracking",
+        "Optimized & Lightweight",
+        "Framework Compatible (ESX / QBCore / Qbox)"
+      ],
+      "pricing": [
+        {
+          "type": "Open Lua Code, Built UI Code",
+          "label": "Escrow Version",
+          "price": 5,
+          "tebexLink": "https://your-tebex-link.com/package/echorp-ox-escrow"
+        },
+        {
+          "type": "Open Lua Code, Open UI Code!",
+          "label": "Open Source",
+          "price": 10,
+          "tebexLink": "https://your-tebex-link.com/package/echorp-ox-open"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EchoRP 2.0 Ox Inventory",
+      "description": "A fully redesigned and optimized Ox Inventory system for ESX, QBCore, and Qbox. Features a modern UI overhaul, improved item previews, durability display, weapon metadata support, and enhanced user experience.",
+      "thumbnail": "previews/EchoRP2Preview.png",
+      "category": ["esx", "qbcore", "qbox", "redesigns"],
+      "videoUrl": "https://youtu.be/3qmT3HbPP64",
+      "features": [
+        "Weapon Metadata & Serial Display",
+        "Durability & Ammo Tracking",
+        "Optimized & Lightweight",
+        "Framework Compatible (ESX / QBCore / Qbox)"
+      ],
+      "pricing": [
+        {
+          "type": "Escrow Lua Code, Built UI Code",
+          "label": "Escrow Version",
+          "price": 15,
+          "tebexLink": "https://your-tebex-link.com/package/echorp-ox-escrow"
+        },
+        {
+          "type": "Open Lua Code, Built UI Code",
+          "label": "Partially Open Version",
+          "price": 25,
+          "tebexLink": "https://your-tebex-link.com/package/echorp-ox-open"
+        },
+        {
+          "type": "Open Lua Code, Open UI Code!",
+          "label": "Fully Open Version",
+          "price": 50,
+          "tebexLink": "https://your-tebex-link.com/package/echorp-ox-open"
+        }
+      ]
+    },
+     {
+      "id": 5,
+      "name": "Vyro's 1.0 Ox Inventory",
+      "description": "A fully redesigned and optimized Ox Inventory system for ESX, QBCore, and Qbox. Features a modern UI overhaul, improved item previews, durability display, weapon metadata support, and enhanced user experience.",
+      "thumbnail": "previews/Vyro1.0Inventory.png",
+      "category": ["esx", "qbcore", "qbox", "redesigns"],
+      "videoUrl": "https://youtu.be/efLvcunMFGY",
       "features": [
         "Weapon Metadata & Serial Display",
         "Durability & Ammo Tracking",
