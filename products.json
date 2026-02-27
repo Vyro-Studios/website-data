@@ -13,7 +13,7 @@
       "description": "A fully configurable shop system built for ESX, QBCore, and Qbox. Features a clean cart-based UI, configurable locations, and secure server-side validation for purchases.",
       "thumbnail": "previews/ShopPreview.png",
       "category": ["esx", "qbcore", "qbox"],
-      "videoUrl": "https://youtu.be/x4OHpev5jWY",
+      "videoUrl": "https://youtu.be/tMdcIYtCRuw",
       "features": [
         "Framework Support: ESX / QBCore / Qbox",
         "Cart-Based Purchasing",
@@ -26,13 +26,13 @@
           "type": "Escrowed Lua Code, Built UI Code, Config Available!",
           "label": "Free (Escrow)",
           "price": 0,
-          "tebexLink": "https://your-tebex-link.com/package/shop-escrow"
+          "tebexLink": "https://vyro-studios.tebex.io/package/7265387"
         },
         {
           "type": "Open Lua Code, Open UI Code!",
           "label": "Open Source",
           "price": 5,
-          "tebexLink": "https://your-tebex-link.com/package/shop-open"
+          "tebexLink": "https://vyro-studios.tebex.io/package/7265397"
         }
       ]
     },
@@ -42,7 +42,7 @@
       "description": "A comprehensive collection of 51 custom-built minigames featuring fully developed UI systems, skill-based challenges, reaction tests, puzzles, and interactive mechanics.",
       "thumbnail": "previews/MinigamesPreview.png",
       "category": ["esx", "qbcore", "qbox"],
-      "videoUrl": "https://youtu.be/IJ7YBFhdqKM",
+      "videoUrl": "https://youtu.be/yw3UTFWkQ5A",
       "features": [
         "51 Unique Minigames",
         "Fully Built Custom UI",
@@ -54,13 +54,13 @@
           "type": "Escrowed Lua Code, Built UI Code",
           "label": "Escrow / Built UI",
           "price": 10,
-          "tebexLink": "https://your-tebex-link.com/package/minigames-escrow"
+          "tebexLink": "https://vyro-studios.tebex.io/package/7307835"
         },
         {
           "type": "Open Lua Code, Built UI Code",
           "label": "Open Lua",
           "price": 20,
-          "tebexLink": "https://your-tebex-link.com/package/minigames-open"
+          "tebexLink": "https://vyro-studios.tebex.io/package/7307836"
         }
       ]
     },
@@ -70,7 +70,7 @@
       "description": "A fully redesigned and optimized Ox Inventory system for ESX, QBCore, and Qbox. Features a modern UI overhaul, improved item previews, durability display, weapon metadata support, and enhanced user experience.",
       "thumbnail": "previews/EchoRP1Preview.png",
       "category": ["esx", "qbcore", "qbox", "redesigns"],
-      "videoUrl": "https://youtu.be/PgOsxQf5PAU",
+      "videoUrl": "https://youtu.be/SyTcyfsFbXU",
       "features": [
         "Weapon Metadata & Serial Display",
         "Durability & Ammo Tracking",
@@ -82,13 +82,13 @@
           "type": "Open Lua Code, Built UI Code",
           "label": "Escrow Version",
           "price": 5,
-          "tebexLink": "https://your-tebex-link.com/package/echorp-ox-escrow"
+          "tebexLink": "https://vyro-studios.tebex.io/package/7307841"
         },
         {
           "type": "Open Lua Code, Open UI Code!",
           "label": "Open Source",
           "price": 10,
-          "tebexLink": "https://your-tebex-link.com/package/echorp-ox-open"
+          "tebexLink": "https://vyro-studios.tebex.io/package/7307842"
         }
       ]
     },
@@ -98,7 +98,7 @@
       "description": "A fully redesigned and optimized Ox Inventory system for ESX, QBCore, and Qbox. Features a modern UI overhaul, improved item previews, durability display, weapon metadata support, and enhanced user experience.",
       "thumbnail": "previews/EchoRP2Preview.png",
       "category": ["esx", "qbcore", "qbox", "redesigns"],
-      "videoUrl": "https://www.youtube.com/embed/3qmT3HbPP64?si=dmftbp6V8szM_HJq",
+      "videoUrl": "https://youtu.be/yCHjNAlv9BE",
       "features": [
         "Weapon Metadata & Serial Display",
         "Durability & Ammo Tracking",
@@ -110,19 +110,19 @@
           "type": "Escrow Lua Code, Built UI Code",
           "label": "Escrow Version",
           "price": 15,
-          "tebexLink": "https://your-tebex-link.com/package/echorp-ox-escrow"
+          "tebexLink": "https://vyro-studios.tebex.io/package/7307845"
         },
         {
           "type": "Open Lua Code, Built UI Code",
           "label": "Partially Open Version",
           "price": 25,
-          "tebexLink": "https://your-tebex-link.com/package/echorp-ox-open"
+          "tebexLink": "httpshttps://vyro-studios.tebex.io/package/7307846"
         },
         {
           "type": "Open Lua Code, Open UI Code!",
           "label": "Fully Open Version",
           "price": 50,
-          "tebexLink": "https://your-tebex-link.com/package/echorp-ox-open"
+          "tebexLink": "https://vyro-studios.tebex.io/package/7307847"
         }
       ]
     },
@@ -144,13 +144,13 @@
           "type": "Open Lua Code, Built UI Code",
           "label": "Escrow Version",
           "price": 5,
-          "tebexLink": "https://your-tebex-link.com/package/echorp-ox-escrow"
+          "tebexLink": "https://vyro-studios.tebex.io/package/7307838"
         },
         {
           "type": "Open Lua Code, Open UI Code!",
           "label": "Open Source",
           "price": 10,
-          "tebexLink": "https://your-tebex-link.com/package/echorp-ox-open"
+          "tebexLink": "https://vyro-studios.tebex.io/package/7307840"
         }
       ]
     }
