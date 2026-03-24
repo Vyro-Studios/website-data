@@ -8,7 +8,7 @@
   ],
   "products": [
      {
-      "id": 1,
+      "id": "prodigy-target",
       "name": "ProdigyRP 2.8 Target System",
       "description": "A redesigned and optimized ox_target system featuring entity, player, vehicle, and zone interactions with smooth UI transitions and efficient syncing.",
       "thumbnail": "previews/TargetPreview.png",
