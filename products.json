@@ -36,7 +36,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "prodigy-shop",
       "name": "ProdigyRP 2.8 Shop System",
       "description": "A fully configurable shop system built for ESX, QBCore, and Qbox. Features a clean cart-based UI, configurable locations, and secure server-side validation for purchases.",
       "thumbnail": "previews/ShopPreview.png",
@@ -65,7 +65,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": "prodigy-minigames",
       "name": "ProdigyRP 2.8 Minigames Pack (51 Games)",
       "description": "A comprehensive collection of 51 custom-built minigames featuring fully developed UI systems, skill-based challenges, reaction tests, puzzles, and interactive mechanics.",
       "thumbnail": "previews/MinigamesPreview.png",
@@ -93,7 +93,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": "echo-1-5-inv",
       "name": "EchoRP 1.5 Ox Inventory",
       "description": "A fully redesigned and optimized Ox Inventory system for ESX, QBCore, and Qbox. Features a modern UI overhaul, improved item previews, durability display, weapon metadata support, and enhanced user experience.",
       "thumbnail": "previews/EchoRP1Preview.png",
@@ -121,7 +121,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": "echo-2-0-inv",
       "name": "EchoRP 2.0 Ox Inventory",
       "description": "A fully redesigned and optimized Ox Inventory system for ESX, QBCore, and Qbox. Features a modern UI overhaul, improved item previews, durability display, weapon metadata support, and enhanced user experience.",
       "thumbnail": "previews/EchoRP2Preview.png",
@@ -155,7 +155,7 @@
       ]
     },
      {
-      "id": 6,
+      "id": "vyros-inv",
       "name": "Vyro's 1.0 Ox Inventory",
       "description": "A fully redesigned and optimized Ox Inventory system for ESX, QBCore, and Qbox. Features a modern UI overhaul, improved item previews, durability display, weapon metadata support, and enhanced user experience.",
       "thumbnail": "previews/Vyro1.0Inventory.png",
